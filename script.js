@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nombre = document.querySelector("#nombre").value;
     const password = document.querySelector("#password").value;
 
-    if (nombre === "" && password === "") {
+    if (nombre === "" || password === "") {
       parrafo.style.display = "block";
       parrafo.innerHTML = "You must fill all the fields";
       parrafo.style.color = "white";
